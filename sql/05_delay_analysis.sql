@@ -1,0 +1,6 @@
+-- =============================================================================
+-- 05_delay_analysis.sql
+-- Purpose: Delay hotspots by route/stop/hour; delay distribution
+-- Phase: 3 (SQL Analytics)
+-- Status: TODO
+-- =============================================================================

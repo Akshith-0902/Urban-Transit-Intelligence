@@ -1,0 +1,7 @@
+-- =============================================================================
+-- 02_demand_analysis.sql
+-- Purpose: Total demand by route/stop, busiest hours, weekday vs weekend,
+--          peak-concentration vs consistently-low-demand routes
+-- Phase: 3 (SQL Analytics)
+-- Status: TODO
+-- =============================================================================

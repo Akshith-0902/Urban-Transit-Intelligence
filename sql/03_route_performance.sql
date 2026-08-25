@@ -1,0 +1,6 @@
+-- =============================================================================
+-- 03_route_performance.sql
+-- Purpose: On-time rate, average delay, scheduled vs actual journey time by route
+-- Phase: 3 (SQL Analytics)
+-- Status: TODO
+-- =============================================================================

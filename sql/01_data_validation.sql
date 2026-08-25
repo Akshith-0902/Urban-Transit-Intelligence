@@ -1,0 +1,11 @@
+-- =============================================================================
+-- 01_data_validation.sql
+-- Purpose: Data quality checks — completeness, validity, consistency, uniqueness
+-- Phase: 2 (Data Cleaning & Validation)
+-- Status: TODO
+-- =============================================================================
+
+-- Completeness: missing route/stop/timestamps/passenger counts
+-- Validity: negative passengers, invalid coordinates, invalid capacities
+-- Consistency: orphaned trips, buses, stop-route links
+-- Uniqueness: duplicate trip_ids, stop_ids, route definitions

@@ -1,0 +1,7 @@
+-- =============================================================================
+-- 06_advanced_analysis.sql
+-- Purpose: Cross-cutting/advanced queries (route clustering inputs, supply-demand
+--          mismatch ranking, etc.) — populated as needed beyond the core 4 layers
+-- Phase: 3 (SQL Analytics) / optional advanced scope
+-- Status: TODO
+-- =============================================================================

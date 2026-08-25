@@ -1,0 +1,6 @@
+-- =============================================================================
+-- 04_capacity_analysis.sql
+-- Purpose: Occupancy rate, capacity utilization, overcrowding vs underutilized routes
+-- Phase: 3 (SQL Analytics)
+-- Status: TODO
+-- =============================================================================
