@@ -50,6 +50,7 @@ urban-transit-intelligence/
 │   └── data_dictionary.md      # Field-by-field documentation
 │
 ├── sql/
+│   ├── 00_schema.sql
 │   ├── 01_data_validation.sql
 │   ├── 02_demand_analysis.sql
 │   ├── 03_route_performance.sql
