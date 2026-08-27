@@ -36,4 +36,38 @@ MTC Chennai has published GTFS feeds in the past, archived on Transitland and GT
 - Actual arrival must not precede actual departure.
 - Occupancy exceeding physically plausible limits is flagged for review rather than silently accepted.
 
+## Synthetic Operations Generator — Finalized Methodology (Phase 1)
+
+`python/01_generate_synthetic_operations.py` produces `buses.csv`, `trips.csv`,
+and `passenger_counts.csv` on top of the real route/stop geography. Full
+parameter tables live as commented config at the top of the script; summary:
+
+- **Fleet size is not a scaled-down copy of the real ~3,376-bus citywide
+  fleet** — that figure covers MTC's real ~650+ route network, not this
+  project's 47-route sample, so naively scaling it down would misrepresent
+  both numbers. Instead, each route is assigned the number of buses actually
+  required to sustain its own peak headway (`round_trip_time ÷ tightest
+  headway`, rounded up) plus a 20% spare/maintenance buffer — the same
+  method real transit planners use. This keeps per-route bus-to-frequency
+  ratios realistic even though the total fleet count (currently 556 buses)
+  reflects a 47-route subset, not the citywide total.
+- **Trips** follow a headway template per route_type (tighter in the two
+  documented peak windows, 07:00–10:00 and 17:00–20:00) with a right-skewed
+  (gamma) delay injected on top — heavier/more variable for Ordinary and
+  Feeder routes, tighter for Express/Electric (AC), with a documented 30%
+  weekend traffic reduction.
+- **Passenger counts** follow a load-profile curve (near-zero at the
+  terminus, peaking near the route's midpoint — standard "max load point"
+  transit-planning modeling) with Poisson noise layered on. The peak height
+  is calibrated per trip via a target occupancy ratio sampled per
+  route_type/peak-off-peak; Ordinary and Limited Stop routes at peak are
+  calibrated to land **above 100% of bus capacity**, consistent with the
+  real, sourced MTC overcrowding benchmark above. Weekend ridership is
+  scaled down (Sat 0.85×, Sun 0.65×) to support the weekday-vs-weekend
+  business question in `docs/business_requirements.md`.
+- Simulated period: 30 days (2026-07-01 to 2026-07-30). This is a
+  synthetic operating window, not a claim about actual conditions in that
+  period.
+- Fully reproducible: fixed random seed (42) via `numpy.random.default_rng`.
+
 _This file will be updated as data generation scripts are finalized in Phase 1._
