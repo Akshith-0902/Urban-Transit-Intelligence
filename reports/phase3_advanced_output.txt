@@ -1,0 +1,206 @@
+--- 1.1 Route scorecard: demand, performance, and capacity in one view ---
+ route_id | route_number |                route_name                |  route_type   | total_distance_km | scheduled_duration_min | total_boardings | avg_boardings_per_day | total_trips | buses_used | pct_on_time | avg_delay_minutes | avg_occupancy_ratio | avg_peak_occupancy | max_occupancy_ratio 
+----------+--------------+------------------------------------------+---------------+-------------------+------------------------+-----------------+-----------------------+-------------+------------+-------------+-------------------+---------------------+--------------------+---------------------
+ R01      | 18A          | Broadway - Tambaram                      | Ordinary      |              41.0 |                    137 |          116041 |                  3868 |        1770 |         28 |         9.8 |              14.1 |                0.49 |               0.63 |                1.61
+ R11      | 1B           | Thiruvottiyur - Tambaram                 | Ordinary      |              51.0 |                    170 |          112071 |                  3736 |        1770 |         35 |         6.2 |              16.3 |                0.49 |               0.57 |                1.62
+ R46      | 3            | T. Nagar - Thiruvanmiyur                 | Ordinary      |              17.9 |                     60 |          110609 |                  3687 |        1770 |         12 |        25.5 |               8.6 |                0.48 |               0.62 |                1.59
+ R02      | 15A          | Broadway - Guindy                        | Ordinary      |              16.5 |                     55 |          108736 |                  3625 |        1770 |         12 |        28.9 |               8.2 |                0.47 |               0.61 |                1.65
+ R06      | 47D          | Thiruvanmiyur - Avadi                    | Ordinary      |              35.5 |                    118 |          108003 |                  3600 |        1770 |         24 |        12.0 |              12.7 |                0.48 |               0.62 |                1.58
+ R12      | 1C           | Thiruvanmiyur - Ennore                   | Ordinary      |              35.2 |                    117 |          107378 |                  3579 |        1770 |         24 |        13.1 |              12.7 |                0.48 |               0.63 |                1.59
+ R03      | 17D          | Broadway - K.K. Nagar                    | Ordinary      |              14.9 |                     50 |          107084 |                  3569 |        1770 |         11 |        28.4 |               8.2 |                0.47 |               0.61 |                1.65
+ R04      | 51D          | Broadway - Tambaram East                 | Ordinary      |              43.3 |                    144 |          106752 |                  3558 |        1770 |         29 |         8.2 |              14.4 |                0.47 |               0.58 |                1.63
+ R09      | 12G          | Broadway - Avadi                         | Ordinary      |              27.6 |                     92 |          106747 |                  3558 |        1770 |         20 |        16.6 |              10.9 |                0.46 |               0.60 |                1.65
+ R20      | TC01         | Tambaram - Chengalpet                    | Ordinary      |              39.7 |                    132 |          105734 |                  3524 |        1770 |         27 |        10.5 |              13.5 |                0.47 |               0.63 |                1.57
+ R07      | 49A          | Poonamallee - T. Nagar                   | Ordinary      |              24.7 |                     82 |          100834 |                  3361 |        1770 |         17 |        19.4 |              10.0 |                0.45 |               0.56 |                1.53
+ R10      | M48          | Villivakkam - Vallalar Nagar             | Ordinary      |              12.4 |                     41 |          100820 |                  3361 |        1770 |          9 |        33.8 |               7.4 |                0.45 |               0.59 |                1.51
+ R45      | 2A           | Anna Square - Kaviarasu Kannadasan Nagar | Ordinary      |              16.3 |                     54 |          100414 |                  3347 |        1770 |         11 |        27.9 |               8.4 |                0.45 |               0.58 |                1.51
+ R08      | M50          | Broadway - Thiruverkadu                  | Ordinary      |              15.4 |                     51 |           99141 |                  3305 |        1770 |         11 |        30.2 |               7.9 |                0.44 |               0.58 |                1.52
+ R16      | 570          | Koyambedu - IT Corridor (Siruseri)       | Ordinary      |              35.5 |                    118 |           96481 |                  3216 |        1770 |         24 |        12.7 |              12.7 |                0.45 |               0.60 |                1.52
+ R47      | 1            | Thiruvottriyur - Thiruvanmiyur           | Ordinary      |              26.5 |                     88 |           96420 |                  3214 |        1770 |         18 |        18.0 |              10.6 |                0.45 |               0.60 |                1.54
+ R17      | 588          | Adyar - Mamallapuram                     | Ordinary      |              56.9 |                    190 |           94697 |                  3157 |        1770 |         39 |         5.1 |              17.8 |                0.45 |               0.67 |                1.50
+ R14      | 101          | Poonamallee - Karayanchavadi             | Ordinary      |               3.2 |                     11 |           68055 |                  2269 |        1770 |          3 |        58.9 |               5.2 |                0.29 |               0.40 |                1.17
+ R05      | 51L          | CMBT - Tambaram East                     | Limited Stop  |              32.9 |                    110 |           67260 |                  2242 |        1230 |         16 |        31.3 |               7.8 |                0.40 |               0.57 |                1.58
+ R36      | S76          | T. Nagar - St Thomas Mount M.R.T.S       | Feeder        |               9.4 |                     31 |           35769 |                  1192 |        1500 |          6 |        86.9 |               2.5 |                0.33 |               0.47 |                1.41
+ R27      | S28          | CMBT - Iyyappanthangal                   | Feeder        |              23.5 |                     78 |           32647 |                  1088 |        1500 |         14 |        70.9 |               3.9 |                0.29 |               0.42 |                1.64
+ R25      | S19          | Chromepet - Kilkattalai                  | Feeder        |              14.8 |                     49 |           32485 |                  1083 |        1500 |          9 |        79.8 |               3.1 |                0.29 |               0.42 |                1.54
+ R41      | S95          | Velachery - Perungudi                    | Feeder        |               6.5 |                     22 |           32335 |                  1078 |        1500 |          4 |        87.9 |               2.4 |                0.28 |               0.40 |                1.49
+ R44      | S100         | Airport Metro - Tambaram East            | Feeder        |              14.8 |                     49 |           31860 |                  1062 |        1500 |          9 |        80.0 |               3.1 |                0.31 |               0.44 |                1.39
+ R24      | S18D         | Saidapet - Kilkattalai                   | Feeder        |              16.0 |                     53 |           31183 |                  1039 |        1500 |         10 |        80.6 |               3.2 |                0.32 |               0.47 |                1.56
+ R23      | S17          | Adyar - Mandaveli                        | Feeder        |               6.7 |                     22 |           31028 |                  1034 |        1500 |          4 |        86.5 |               2.4 |                0.29 |               0.40 |                1.49
+ R31      | S45          | Poonamallee - Avadi                      | Feeder        |              12.8 |                     43 |           30931 |                  1031 |        1500 |          8 |        82.9 |               3.0 |                0.29 |               0.41 |                1.41
+ R37      | S82          | Alandur Metro - Madipakkam               | Feeder        |               5.8 |                     19 |           30831 |                  1028 |        1500 |          4 |        89.4 |               2.2 |                0.29 |               0.40 |                1.47
+ R30      | S44          | Villivakkam - Perambur                   | Feeder        |               4.5 |                     15 |           30206 |                  1007 |        1500 |          3 |        86.8 |               2.2 |                0.29 |               0.42 |                1.42
+ R39      | S86          | T. Nagar - Ramapuram                     | Feeder        |               7.6 |                     25 |           29812 |                   994 |        1500 |          5 |        87.3 |               2.4 |                0.32 |               0.45 |                1.33
+ R43      | S98          | Little Mount Metro - Tharamani           | Feeder        |               8.8 |                     29 |           29755 |                   992 |        1500 |          5 |        87.7 |               2.4 |                0.32 |               0.44 |                1.43
+ R38      | S83          | Alandur Metro - Guru Nanak College       | Feeder        |              11.5 |                     38 |           29526 |                   984 |        1500 |          8 |        85.3 |               2.8 |                0.32 |               0.46 |                1.50
+ R22      | S15          | Thiruvanmiyur M.R.T.S - Madhya Kailash   | Feeder        |               7.1 |                     24 |           29148 |                   972 |        1500 |          5 |        86.6 |               2.5 |                0.32 |               0.45 |                1.34
+ R35      | S69          | Airport Metro - Kundrathur               | Feeder        |              17.5 |                     58 |           28976 |                   966 |        1500 |         10 |        78.8 |               3.4 |                0.29 |               0.43 |                1.47
+ R13      | 99X          | Kilambakkam - Adyar                      | Express       |              38.9 |                    130 |           28570 |                   952 |         840 |         14 |        76.0 |               3.4 |                0.26 |               0.34 |                1.13
+ R15      | 102X         | Broadway - Thiruporur                    | Express       |              36.9 |                    123 |           28407 |                   947 |         840 |         12 |        79.0 |               3.3 |                0.27 |               0.38 |                1.13
+ R18      | MAA2         | Chennai Airport - Siruseri IT Park       | Electric (AC) |              33.0 |                    110 |           25083 |                   836 |         960 |         12 |        96.4 |               1.5 |                0.25 |               0.35 |                1.03
+ R28      | S30          | Ashok Nagar Metro - Saidapet             | Feeder        |               2.7 |                      9 |           23639 |                   788 |        1500 |          3 |        89.2 |               2.1 |                0.20 |               0.29 |                1.00
+ R40      | S87          | CMBT - K.K. Nagar                        | Feeder        |               4.7 |                     16 |           21897 |                   730 |        1500 |          4 |        88.5 |               2.3 |                0.20 |               0.30 |                1.08
+ R26      | S22          | Porur - Mangadu                          | Feeder        |              17.0 |                     57 |           21560 |                   719 |        1500 |         10 |        79.4 |               3.3 |                0.21 |               0.33 |                1.06
+ R33      | S56          | Thiruvottriyur - Manali                  | Feeder        |               4.9 |                     16 |           21415 |                   714 |        1500 |          4 |        88.9 |               2.2 |                0.20 |               0.30 |                1.08
+ R34      | S62          | Perambur - Manali                        | Feeder        |               9.1 |                     30 |           21414 |                   714 |        1500 |          5 |        85.6 |               2.6 |                0.21 |               0.31 |                1.03
+ R29      | S31          | CMBT - Vadapalani                        | Feeder        |               3.7 |                     12 |           21329 |                   711 |        1500 |          3 |        89.7 |               2.1 |                0.21 |               0.30 |                1.08
+ R32      | S51          | CMBT - Nolambur                          | Feeder        |               6.0 |                     20 |           21065 |                   702 |        1500 |          4 |        88.5 |               2.3 |                0.21 |               0.30 |                1.00
+ R42      | S97          | Guindy Metro - Velachery                 | Feeder        |               4.0 |                     13 |           20965 |                   699 |        1500 |          3 |        87.8 |               2.2 |                0.21 |               0.30 |                1.05
+ R21      | S12          | Velachery M.R.T.S - Guindy Race Course   | Feeder        |               4.0 |                     13 |           20836 |                   695 |        1500 |          3 |        89.5 |               2.1 |                0.21 |               0.30 |                1.06
+ R19      | 47F          | Night Service - Chennai Airport          | Night Service |              23.4 |                     78 |            4303 |                   143 |         240 |          5 |        99.6 |               1.1 |                0.15 |                    |                0.52
+(47 rows)
+
+--- 2.1 Average scheduled headway and estimated wait time by route, peak vs off-peak ---
+ route_id | route_number |  route_type   |  period  | avg_headway_minutes | estimated_avg_wait_minutes 
+----------+--------------+---------------+----------+---------------------+----------------------------
+ R18      | MAA2         | Electric (AC) | Off-peak |                42.1 |                       21.1
+ R18      | MAA2         | Electric (AC) | Peak     |                25.1 |                       12.5
+ R13      | 99X          | Express       | Off-peak |                50.0 |                       25.0
+ R13      | 99X          | Express       | Peak     |                28.6 |                       14.3
+ R15      | 102X         | Express       | Off-peak |                50.0 |                       25.0
+ R15      | 102X         | Express       | Peak     |                28.6 |                       14.3
+ R21      | S12          | Feeder        | Off-peak |                27.0 |                       13.5
+ R21      | S12          | Feeder        | Peak     |                16.1 |                        8.1
+ R22      | S15          | Feeder        | Off-peak |                27.0 |                       13.5
+ R22      | S15          | Feeder        | Peak     |                16.1 |                        8.1
+ R23      | S17          | Feeder        | Off-peak |                27.0 |                       13.5
+ R23      | S17          | Feeder        | Peak     |                16.1 |                        8.1
+ R24      | S18D         | Feeder        | Off-peak |                27.0 |                       13.5
+ R24      | S18D         | Feeder        | Peak     |                16.1 |                        8.1
+ R25      | S19          | Feeder        | Off-peak |                27.0 |                       13.5
+ R25      | S19          | Feeder        | Peak     |                16.1 |                        8.1
+ R26      | S22          | Feeder        | Off-peak |                27.0 |                       13.5
+ R26      | S22          | Feeder        | Peak     |                16.1 |                        8.1
+ R27      | S28          | Feeder        | Off-peak |                27.0 |                       13.5
+ R27      | S28          | Feeder        | Peak     |                16.1 |                        8.1
+ R28      | S30          | Feeder        | Off-peak |                27.0 |                       13.5
+ R28      | S30          | Feeder        | Peak     |                16.1 |                        8.1
+ R29      | S31          | Feeder        | Off-peak |                27.0 |                       13.5
+ R29      | S31          | Feeder        | Peak     |                16.1 |                        8.1
+ R30      | S44          | Feeder        | Off-peak |                27.0 |                       13.5
+ R30      | S44          | Feeder        | Peak     |                16.1 |                        8.1
+ R31      | S45          | Feeder        | Off-peak |                27.0 |                       13.5
+ R31      | S45          | Feeder        | Peak     |                16.1 |                        8.1
+ R32      | S51          | Feeder        | Off-peak |                27.0 |                       13.5
+ R32      | S51          | Feeder        | Peak     |                16.1 |                        8.1
+ R33      | S56          | Feeder        | Off-peak |                27.0 |                       13.5
+ R33      | S56          | Feeder        | Peak     |                16.1 |                        8.1
+ R34      | S62          | Feeder        | Off-peak |                27.0 |                       13.5
+ R34      | S62          | Feeder        | Peak     |                16.1 |                        8.1
+ R35      | S69          | Feeder        | Off-peak |                27.0 |                       13.5
+ R35      | S69          | Feeder        | Peak     |                16.1 |                        8.1
+ R36      | S76          | Feeder        | Off-peak |                27.0 |                       13.5
+ R36      | S76          | Feeder        | Peak     |                16.1 |                        8.1
+ R37      | S82          | Feeder        | Off-peak |                27.0 |                       13.5
+ R37      | S82          | Feeder        | Peak     |                16.1 |                        8.1
+ R38      | S83          | Feeder        | Off-peak |                27.0 |                       13.5
+ R38      | S83          | Feeder        | Peak     |                16.1 |                        8.1
+ R39      | S86          | Feeder        | Off-peak |                27.0 |                       13.5
+ R39      | S86          | Feeder        | Peak     |                16.1 |                        8.1
+ R40      | S87          | Feeder        | Off-peak |                27.0 |                       13.5
+ R40      | S87          | Feeder        | Peak     |                16.1 |                        8.1
+ R41      | S95          | Feeder        | Off-peak |                27.0 |                       13.5
+ R41      | S95          | Feeder        | Peak     |                16.1 |                        8.1
+ R42      | S97          | Feeder        | Off-peak |                27.0 |                       13.5
+ R42      | S97          | Feeder        | Peak     |                16.1 |                        8.1
+ R43      | S98          | Feeder        | Off-peak |                27.0 |                       13.5
+ R43      | S98          | Feeder        | Peak     |                16.1 |                        8.1
+ R44      | S100         | Feeder        | Off-peak |                27.0 |                       13.5
+ R44      | S100         | Feeder        | Peak     |                16.1 |                        8.1
+ R05      | 51L          | Limited Stop  | Off-peak |                33.4 |                       16.7
+ R05      | 51L          | Limited Stop  | Peak     |                19.8 |                        9.9
+ R19      | 47F          | Night Service | Off-peak |                50.0 |                       25.0
+ R01      | 18A          | Ordinary      | Off-peak |                24.1 |                       12.0
+ R01      | 18A          | Ordinary      | Peak     |                12.9 |                        6.4
+ R02      | 15A          | Ordinary      | Off-peak |                24.1 |                       12.0
+ R02      | 15A          | Ordinary      | Peak     |                12.9 |                        6.4
+ R03      | 17D          | Ordinary      | Off-peak |                24.1 |                       12.0
+ R03      | 17D          | Ordinary      | Peak     |                12.9 |                        6.4
+ R04      | 51D          | Ordinary      | Off-peak |                24.1 |                       12.0
+ R04      | 51D          | Ordinary      | Peak     |                12.9 |                        6.4
+ R06      | 47D          | Ordinary      | Off-peak |                24.1 |                       12.0
+ R06      | 47D          | Ordinary      | Peak     |                12.9 |                        6.4
+ R07      | 49A          | Ordinary      | Off-peak |                24.1 |                       12.0
+ R07      | 49A          | Ordinary      | Peak     |                12.9 |                        6.4
+ R08      | M50          | Ordinary      | Off-peak |                24.1 |                       12.0
+ R08      | M50          | Ordinary      | Peak     |                12.9 |                        6.4
+ R09      | 12G          | Ordinary      | Off-peak |                24.1 |                       12.0
+ R09      | 12G          | Ordinary      | Peak     |                12.9 |                        6.4
+ R10      | M48          | Ordinary      | Off-peak |                24.1 |                       12.0
+ R10      | M48          | Ordinary      | Peak     |                12.9 |                        6.4
+ R11      | 1B           | Ordinary      | Off-peak |                24.1 |                       12.0
+ R11      | 1B           | Ordinary      | Peak     |                12.9 |                        6.4
+ R12      | 1C           | Ordinary      | Off-peak |                24.1 |                       12.0
+ R12      | 1C           | Ordinary      | Peak     |                12.9 |                        6.4
+ R14      | 101          | Ordinary      | Off-peak |                24.1 |                       12.0
+ R14      | 101          | Ordinary      | Peak     |                12.9 |                        6.4
+ R16      | 570          | Ordinary      | Off-peak |                24.1 |                       12.0
+ R16      | 570          | Ordinary      | Peak     |                12.9 |                        6.4
+ R17      | 588          | Ordinary      | Off-peak |                24.1 |                       12.0
+ R17      | 588          | Ordinary      | Peak     |                12.9 |                        6.4
+ R20      | TC01         | Ordinary      | Off-peak |                24.1 |                       12.0
+ R20      | TC01         | Ordinary      | Peak     |                12.9 |                        6.4
+ R45      | 2A           | Ordinary      | Off-peak |                24.1 |                       12.0
+ R45      | 2A           | Ordinary      | Peak     |                12.9 |                        6.4
+ R46      | 3            | Ordinary      | Off-peak |                24.1 |                       12.0
+ R46      | 3            | Ordinary      | Peak     |                12.9 |                        6.4
+ R47      | 1            | Ordinary      | Off-peak |                24.1 |                       12.0
+ R47      | 1            | Ordinary      | Peak     |                12.9 |                        6.4
+(93 rows)
+
+--- 3.1 Top 10 overcrowded routes (highest peak occupancy, ranked for capacity addition) ---
+ route_id | route_number | route_type | buses_used | avg_peak_occupancy 
+----------+--------------+------------+------------+--------------------
+ R17      | 588          | Ordinary   |         39 |               0.67
+ R01      | 18A          | Ordinary   |         28 |               0.63
+ R20      | TC01         | Ordinary   |         27 |               0.63
+ R12      | 1C           | Ordinary   |         24 |               0.63
+ R06      | 47D          | Ordinary   |         24 |               0.62
+ R46      | 3            | Ordinary   |         12 |               0.62
+ R03      | 17D          | Ordinary   |         11 |               0.61
+ R02      | 15A          | Ordinary   |         12 |               0.61
+ R09      | 12G          | Ordinary   |         20 |               0.60
+ R16      | 570          | Ordinary   |         24 |               0.60
+(10 rows)
+
+--- 3.2 Top 10 underutilized routes (lowest overall occupancy, ranked as release-capacity candidates) ---
+ route_id | route_number |  route_type   | buses_used | avg_occupancy_ratio 
+----------+--------------+---------------+------------+---------------------
+ R19      | 47F          | Night Service |          5 |                0.15
+ R40      | S87          | Feeder        |          4 |                0.20
+ R28      | S30          | Feeder        |          3 |                0.20
+ R33      | S56          | Feeder        |          4 |                0.20
+ R26      | S22          | Feeder        |         10 |                0.21
+ R21      | S12          | Feeder        |          3 |                0.21
+ R34      | S62          | Feeder        |          5 |                0.21
+ R29      | S31          | Feeder        |          3 |                0.21
+ R32      | S51          | Feeder        |          4 |                0.21
+ R42      | S97          | Feeder        |          3 |                0.21
+(10 rows)
+
+--- 3.3 Illustrative pairing: same-bus_type donor/receiver candidates (diagnostic only, not a simulated outcome) ---
+ bus_type | overcrowded_route_id | overcrowded_route | avg_peak_occupancy | donor_candidate_route_id | donor_candidate_route | donor_avg_occupancy 
+----------+----------------------+-------------------+--------------------+--------------------------+-----------------------+---------------------
+ Mini Bus | R24                  | S18D              |               0.47 | R40                      | S87                   |                0.20
+ Mini Bus | R36                  | S76               |               0.47 | R33                      | S56                   |                0.20
+ Mini Bus | R38                  | S83               |               0.46 | R28                      | S30                   |                0.20
+ Mini Bus | R22                  | S15               |               0.45 | R21                      | S12                   |                0.21
+ Mini Bus | R39                  | S86               |               0.45 | R42                      | S97                   |                0.21
+ Standard | R17                  | 588               |               0.67 | R19                      | 47F                   |                0.15
+ Standard | R20                  | TC01              |               0.63 | R13                      | 99X                   |                0.26
+ Standard | R12                  | 1C                |               0.63 | R15                      | 102X                  |                0.27
+ Standard | R01                  | 18A               |               0.63 | R14                      | 101                   |                0.29
+ Standard | R46                  | 3                 |               0.62 | R05                      | 51L                   |                0.40
+(10 rows)
+
+--- 4.1 Stops in the top quartile for BOTH demand and estimated delay ---
+ stop_id |         stop_name          |           zone            | total_activity | avg_estimated_delay_min 
+---------+----------------------------+---------------------------+----------------+-------------------------
+ ST008   | Tambaram                   | Chennai Metropolitan Area |         331204 |                     9.2
+ ST019   | Avadi                      | Chennai Metropolitan Area |         172652 |                     9.2
+ ST033   | Siruseri                   | Chennai Metropolitan Area |         109725 |                     8.8
+ ST007   | Pallavaram                 | Chennai Metropolitan Area |          95672 |                     8.1
+ ST069   | Kaviarasu Kannadasan Nagar | Chennai Metropolitan Area |          91603 |                     8.4
+ ST035   | Mamallapuram               | Chennai Metropolitan Area |          86242 |                    17.8
+(6 rows)
+

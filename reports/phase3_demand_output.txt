@@ -1,0 +1,214 @@
+--- 1.1 Total network ridership over the 30-day window ---
+ total_stop_events | total_boardings | total_alightings | total_trips_with_ridership 
+-------------------+-----------------+------------------+----------------------------
+            281700 |         2660252 |          2660252 |                      71970
+(1 row)
+
+--- 1.2 Total ridership by route_type tier ---
+  route_type   | total_boardings | pct_of_network 
+---------------+-----------------+----------------
+ Ordinary      |         1846017 |           69.4
+ Feeder        |          660612 |           24.8
+ Limited Stop  |           67260 |            2.5
+ Express       |           56977 |            2.1
+ Electric (AC) |           25083 |            0.9
+ Night Service |            4303 |            0.2
+(6 rows)
+
+--- 2.1 Top 15 routes by total boardings ---
+ route_id | route_number |                route_name                | route_type | total_boardings | avg_boardings_per_day | total_trips 
+----------+--------------+------------------------------------------+------------+-----------------+-----------------------+-------------
+ R01      | 18A          | Broadway - Tambaram                      | Ordinary   |          116041 |                  3868 |        1770
+ R11      | 1B           | Thiruvottiyur - Tambaram                 | Ordinary   |          112071 |                  3736 |        1770
+ R46      | 3            | T. Nagar - Thiruvanmiyur                 | Ordinary   |          110609 |                  3687 |        1770
+ R02      | 15A          | Broadway - Guindy                        | Ordinary   |          108736 |                  3625 |        1770
+ R06      | 47D          | Thiruvanmiyur - Avadi                    | Ordinary   |          108003 |                  3600 |        1770
+ R12      | 1C           | Thiruvanmiyur - Ennore                   | Ordinary   |          107378 |                  3579 |        1770
+ R03      | 17D          | Broadway - K.K. Nagar                    | Ordinary   |          107084 |                  3569 |        1770
+ R04      | 51D          | Broadway - Tambaram East                 | Ordinary   |          106752 |                  3558 |        1770
+ R09      | 12G          | Broadway - Avadi                         | Ordinary   |          106747 |                  3558 |        1770
+ R20      | TC01         | Tambaram - Chengalpet                    | Ordinary   |          105734 |                  3524 |        1770
+ R07      | 49A          | Poonamallee - T. Nagar                   | Ordinary   |          100834 |                  3361 |        1770
+ R10      | M48          | Villivakkam - Vallalar Nagar             | Ordinary   |          100820 |                  3361 |        1770
+ R45      | 2A           | Anna Square - Kaviarasu Kannadasan Nagar | Ordinary   |          100414 |                  3347 |        1770
+ R08      | M50          | Broadway - Thiruverkadu                  | Ordinary   |           99141 |                  3305 |        1770
+ R16      | 570          | Koyambedu - IT Corridor (Siruseri)       | Ordinary   |           96481 |                  3216 |        1770
+(15 rows)
+
+--- 2.2 Bottom 15 routes by total boardings (lowest-demand routes) ---
+ route_id | route_number |               route_name               |  route_type   | total_boardings | avg_boardings_per_day 
+----------+--------------+----------------------------------------+---------------+-----------------+-----------------------
+ R19      | 47F          | Night Service - Chennai Airport        | Night Service |            4303 |                   143
+ R21      | S12          | Velachery M.R.T.S - Guindy Race Course | Feeder        |           20836 |                   695
+ R42      | S97          | Guindy Metro - Velachery               | Feeder        |           20965 |                   699
+ R32      | S51          | CMBT - Nolambur                        | Feeder        |           21065 |                   702
+ R29      | S31          | CMBT - Vadapalani                      | Feeder        |           21329 |                   711
+ R34      | S62          | Perambur - Manali                      | Feeder        |           21414 |                   714
+ R33      | S56          | Thiruvottriyur - Manali                | Feeder        |           21415 |                   714
+ R26      | S22          | Porur - Mangadu                        | Feeder        |           21560 |                   719
+ R40      | S87          | CMBT - K.K. Nagar                      | Feeder        |           21897 |                   730
+ R28      | S30          | Ashok Nagar Metro - Saidapet           | Feeder        |           23639 |                   788
+ R18      | MAA2         | Chennai Airport - Siruseri IT Park     | Electric (AC) |           25083 |                   836
+ R15      | 102X         | Broadway - Thiruporur                  | Express       |           28407 |                   947
+ R13      | 99X          | Kilambakkam - Adyar                    | Express       |           28570 |                   952
+ R35      | S69          | Airport Metro - Kundrathur             | Feeder        |           28976 |                   966
+ R22      | S15          | Thiruvanmiyur M.R.T.S - Madhya Kailash | Feeder        |           29148 |                   972
+(15 rows)
+
+--- 3.1 Top 15 busiest stops by total activity (boardings + alightings) ---
+ stop_id |    stop_name     |           zone            | total_boardings | total_alightings | total_activity | routes_served 
+---------+------------------+---------------------------+-----------------+------------------+----------------+---------------
+ ST008   | Tambaram         | Chennai Metropolitan Area |           42999 |           288205 |         331204 |             8
+ ST004   | T. Nagar         | Chennai Metropolitan Area |          167991 |           128809 |         296800 |            10
+ ST003   | Egmore           | Chennai Metropolitan Area |          189546 |           101027 |         290573 |             5
+ ST014   | Koyambedu (CMBT) | Chennai Metropolitan Area |          196727 |            92690 |         289417 |             8
+ ST005   | Guindy           | Chennai Metropolitan Area |          152259 |           129653 |         281912 |            14
+ ST015   | Thiruvanmiyur    | Chennai Metropolitan Area |          120591 |           159312 |         279903 |             6
+ ST001   | Broadway         | Chennai Metropolitan Area |          235655 |            41269 |         276924 |            11
+ ST016   | Adyar            | Chennai Metropolitan Area |          146215 |            29090 |         175305 |             5
+ ST019   | Avadi            | Chennai Metropolitan Area |               0 |           172652 |         172652 |             3
+ ST022   | Perambur         | Chennai Metropolitan Area |          129364 |            32907 |         162271 |             4
+ ST012   | Velachery        | Chennai Metropolitan Area |           67987 |            81771 |         149758 |             9
+ ST020   | Poonamallee      | Chennai Metropolitan Area |          123963 |                0 |         123963 |             3
+ ST033   | Siruseri         | Chennai Metropolitan Area |               0 |           109725 |         109725 |             2
+ ST047   | Saidapet         | Chennai Metropolitan Area |           76297 |            26939 |         103236 |             4
+ ST011   | K.K. Nagar       | Chennai Metropolitan Area |               0 |            97641 |          97641 |             2
+(15 rows)
+
+--- 3.2 Stops ranked by net boardings minus alightings (origin-heavy vs destination-heavy) ---
+ stop_id |    stop_name     | total_boardings | total_alightings | net_boardings_minus_alightings 
+---------+------------------+-----------------+------------------+--------------------------------
+ ST001   | Broadway         |          235655 |            41269 |                         194386
+ ST020   | Poonamallee      |          123963 |                0 |                         123963
+ ST016   | Adyar            |          146215 |            29090 |                         117125
+ ST014   | Koyambedu (CMBT) |          196727 |            92690 |                         104037
+ ST022   | Perambur         |          129364 |            32907 |                          96457
+ ST003   | Egmore           |          189546 |           101027 |                          88519
+ ST026   | Thiruvottiyur    |           83782 |                0 |                          83782
+ ST023   | Villivakkam      |           78121 |             4032 |                          74089
+ ST067   | Triplicane       |           57052 |             2260 |                          54792
+ ST070   | Royapuram        |           54772 |             2197 |                          52575
+(10 rows)
+
+--- 4.1 Total boardings by hour of day (network-wide) ---
+ hour_of_day | total_boardings | pct_of_daily_boardings 
+-------------+-----------------+------------------------
+           0 |            1171 |                    0.0
+           1 |             924 |                    0.0
+           2 |             562 |                    0.0
+           3 |             706 |                    0.0
+           4 |            2337 |                    0.1
+           5 |           69324 |                    2.6
+           6 |           69760 |                    2.6
+           7 |          215276 |                    8.1
+           8 |          296627 |                   11.2
+           9 |          297382 |                   11.2
+          10 |          139239 |                    5.2
+          11 |           76149 |                    2.9
+          12 |           70731 |                    2.7
+          13 |           73738 |                    2.8
+          14 |           71170 |                    2.7
+          15 |           73151 |                    2.7
+          16 |           69607 |                    2.6
+          17 |          216474 |                    8.1
+          18 |          297987 |                   11.2
+          19 |          300225 |                   11.3
+          20 |          149584 |                    5.6
+          21 |           78321 |                    2.9
+          22 |           72089 |                    2.7
+          23 |           17718 |                    0.7
+(24 rows)
+
+--- 4.2 Busiest single hour per route_type tier ---
+  route_type   | busiest_hour | total_boardings 
+---------------+--------------+-----------------
+ Electric (AC) |            9 |            3183
+ Express       |            9 |            7206
+ Feeder        |            8 |           75386
+ Limited Stop  |            9 |            8051
+ Night Service |            1 |             877
+ Ordinary      |           19 |          207942
+(6 rows)
+
+--- 5.1 Weekday vs Saturday vs Sunday, network-wide (sanity-checks calibration targets: Sat ~0.85x, Sun ~0.65x) ---
+ day_type | n_days | total_boardings | avg_boardings_per_day 
+----------+--------+-----------------+-----------------------
+ Saturday |      4 |          326483 |                 81621
+ Sunday   |      4 |          254780 |                 63695
+ Weekday  |     22 |         2078989 |                 94500
+(3 rows)
+
+--- 5.2 Weekday vs weekend demand by route_type ---
+  route_type   | day_type | avg_boardings_per_day 
+---------------+----------+-----------------------
+ Electric (AC) | Weekday  |                   887
+ Electric (AC) | Weekend  |                   696
+ Express       | Weekday  |                  2021
+ Express       | Weekend  |                  1563
+ Feeder        | Weekday  |                 23413
+ Feeder        | Weekend  |                 18191
+ Limited Stop  | Weekday  |                  2392
+ Limited Stop  | Weekend  |                  1830
+ Night Service | Weekday  |                   151
+ Night Service | Weekend  |                   123
+ Ordinary      | Weekday  |                 65635
+ Ordinary      | Weekend  |                 50256
+(12 rows)
+
+--- 6.1 Peak-concentration ratio per route (top 10 most peak-concentrated) ---
+ route_id | route_number |  route_type   | total_boardings | pct_boardings_in_peak 
+----------+--------------+---------------+-----------------+-----------------------
+ R19      | 47F          | Night Service |            4303 |                      
+ R29      | S31          | Feeder        |           21329 |                  66.8
+ R33      | S56          | Feeder        |           21415 |                  66.4
+ R26      | S22          | Feeder        |           21560 |                  66.3
+ R28      | S30          | Feeder        |           23639 |                  66.2
+ R34      | S62          | Feeder        |           21414 |                  66.2
+ R21      | S12          | Feeder        |           20836 |                  65.9
+ R14      | 101          | Ordinary      |           68055 |                  65.9
+ R42      | S97          | Feeder        |           20965 |                  65.8
+ R40      | S87          | Feeder        |           21897 |                  65.6
+(10 rows)
+
+--- 6.2 Consistently low-demand routes: bottom-quartile total volume AND below-median peak concentration ---
+ route_id | route_number |  route_type   | total_boardings | pct_boardings_in_peak 
+----------+--------------+---------------+-----------------+-----------------------
+ R18      | MAA2         | Electric (AC) |           25083 |                  59.1
+ R15      | 102X         | Express       |           28407 |                  61.5
+(2 rows)
+
+--- 7.1 Total boardings per service_date ---
+ service_date | weekday | total_boardings 
+--------------+---------+-----------------
+ 2026-07-01   | Wed     |           94274
+ 2026-07-02   | Thu     |           94513
+ 2026-07-03   | Fri     |           94109
+ 2026-07-04   | Sat     |           81937
+ 2026-07-05   | Sun     |           63671
+ 2026-07-06   | Mon     |           94688
+ 2026-07-07   | Tue     |           94320
+ 2026-07-08   | Wed     |           94809
+ 2026-07-09   | Thu     |           94663
+ 2026-07-10   | Fri     |           94138
+ 2026-07-11   | Sat     |           82089
+ 2026-07-12   | Sun     |           64247
+ 2026-07-13   | Mon     |           94382
+ 2026-07-14   | Tue     |           94901
+ 2026-07-15   | Wed     |           95037
+ 2026-07-16   | Thu     |           95312
+ 2026-07-17   | Fri     |           94697
+ 2026-07-18   | Sat     |           81086
+ 2026-07-19   | Sun     |           63214
+ 2026-07-20   | Mon     |           93921
+ 2026-07-21   | Tue     |           94783
+ 2026-07-22   | Wed     |           94591
+ 2026-07-23   | Thu     |           94304
+ 2026-07-24   | Fri     |           94003
+ 2026-07-25   | Sat     |           81371
+ 2026-07-26   | Sun     |           63648
+ 2026-07-27   | Mon     |           95013
+ 2026-07-28   | Tue     |           94023
+ 2026-07-29   | Wed     |           93779
+ 2026-07-30   | Thu     |           94729
+(30 rows)
+
